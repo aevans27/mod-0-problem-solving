@@ -69,3 +69,21 @@ def taxes(year_amount, is_married)
 end
 
 puts "You owe #{taxes(55555555, false)} in taxes"
+
+# 1. Given an array of strings,
+# print only the strings that have exactly 4 characters.
+
+# The data types will be arrays of strings
+# No documentation needed really
+# Will ned an each do interation to get through the array
+# I don't think I'll need to look up anything for this problem
+names = ["Allan", "Gary", "Steve", "Tomm"]
+def only_four(names)
+    names.each do |name|
+        if name.length == 4
+            puts name
+        end
+    end
+end
+
+only_four(names)
